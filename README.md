@@ -14,3 +14,11 @@ Depois usei a imagem do scratch, que é a mais leve possível, e consegui reduzi
 Não estava vendo saída, então fui no discord para ver o que o pessoal falava sobre, e descobri que poderíamos usar as flags -ldflags "-s -w" para reduzir o tamanho do binário. Então, adicionei essas flags no Makefile e consegui reduzir para 4.5MB.
 
 No final, vi que não estava fazendo o desafio corretamente. Eu estava tentando criar um webserver que retornava uma pagina html, mas não era isso que o desafio pedia. Então, reescrevi a aplicação go, removendo os pacotes e tudo mais que era necessário para o webserver, e com isso reduzi o tamanho da imagem para 1.22MB.
+
+
+## link do repositório
+
+https://hub.docker.com/r/capaci/fc-docker-go
+
+
+Para rodar diretamente do docker hub, basta rodar `docker run capaci/fc-docker-go`
